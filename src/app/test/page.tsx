@@ -1,4 +1,5 @@
 import { unstable_noStore as noStore } from "next/cache";
+import { TestButton } from "../_components/test-button";
 
 // export const revalidate = 60;
 
@@ -11,6 +12,7 @@ export default function Home() {
          <div>
             This is a Next.js application hosted on Azure Static Web Apps with hybrid rendering. The time on the server is{" "}
             <strong>{timeOnServer}</strong>.
+            <TestButton />
          </div>
       </main>
    );
